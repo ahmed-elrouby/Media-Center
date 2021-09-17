@@ -1,0 +1,284 @@
+/* body
+{
+    height: 5000px;
+} */
+*
+{
+    padding: 0;
+    margin: 0;
+}
+main
+{
+    overflow: hidden;
+    display: flex;
+    flex-wrap: wrap;
+}
+/************** Header **************/
+
+header
+{
+    width: 100%;
+    min-height: 60px;
+    display: flex;
+    background-color: rgb(79,76,69);
+    justify-content: space-between;
+    position: fixed;
+    flex-wrap: wrap;
+    z-index: 5;
+}
+header nav
+{
+    width: max(400px,30%);
+    height: 60px;
+}
+header nav ul
+{
+    list-style: none;
+    display: flex;
+    height: 60px;
+    justify-content: space-between;
+    align-items: center;
+    /* flex-wrap: wrap; */
+    
+
+    
+
+}
+header nav ul li
+{
+    color: rgb(255, 255,255);
+    border-right: 1px solid rgb(255, 255,255);
+    font-size: max(12px,1.5vw);
+    width: 25%;
+    height: 60px;
+    text-align: center;
+    line-height: 60px;
+}
+header img
+{
+    width: max(200px,15%);
+    height: 60px;
+    box-sizing: border-box;
+    padding: 10px;
+}
+/************** Header **************/
+
+/************** Section1 **************/
+.sec1
+{
+    position: relative;
+    display: flex;
+    margin-top: 60px;
+    width: 100%;
+    min-height: 550px;
+    background: url(../images/slider.jpg) no-repeat;
+    background-size: 100% 100%;
+    background-position: top ;
+    /* background-attachment: fixed; */
+
+}
+.d1
+{
+    position: fixed;
+    width: 150px;
+    height: 50px;
+    top:100px;
+    border-radius: 5px;
+    left:-125px;
+    background-color: rgb(15, 235, 15);
+    transition: all 1s;
+}
+.d1 h1
+{
+    text-align: center;
+    line-height: 50px;
+    display: none;
+    
+}
+div h1 a
+{
+    text-decoration: none;
+    color:rgb(255, 255,255);
+}
+
+.d1:hover
+{
+    left:0px;
+}
+.d1:hover h1
+{
+    display: block;
+}
+
+.d2
+{
+    position: fixed;
+    width: 150px;
+    height: 50px;
+    top:160px;
+    border-radius: 5px;
+    left:-125px;
+    background-color: rgb(10, 137, 241);
+    transition: all 1s;
+}
+.d2 h1
+{
+    text-align: center;
+    line-height: 50px;
+    display: none;
+}
+
+.d2:hover
+{
+    left:0px;
+}
+.d2:hover h1
+{
+    display: block;
+}
+
+.d3{
+    position: fixed;
+    width: 150px;
+    height: 50px;
+    top:220px;
+    border-radius: 5px;
+    left:-125px;
+    background-color: rgb(247, 4, 45);
+    transition: all 1s;
+}
+.d3 h1
+{
+    text-align: center;
+    line-height: 50px;
+    display: none;
+}
+
+.d3:hover
+{
+    left:0px;
+}
+.d3:hover h1
+{
+    display: block;
+}
+
+.d4
+{
+    position: fixed;
+    width: 150px;
+    height: 50px;
+    top:280px;
+    border-radius: 5px;
+    left:-125px;
+    background-color: rgb(14, 224, 231);
+    transition: all 1s;
+}
+.d4 h1
+{
+    text-align: center;
+    line-height: 50px;
+    display: none;
+}
+
+.d4:hover
+{
+    left:0px;
+}
+.d4:hover h1
+{
+    display: block;
+}
+/************** Section1 **************/
+
+/************** Section2 **************/
+.sec2
+{
+    display: flex;
+    width: 100%;
+    min-height: 300px;
+    background-color: #ccc;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+div
+{
+    width:400px;
+    height: 200px;
+}
+div h2
+{
+    height: 25%;
+    text-align: center;
+    box-sizing: border-box;
+    padding: 10px;
+    color: white;
+    /* line-height:30px; */
+}
+.hb1
+{
+    background-color:rgb(255,0,0);
+}
+.hb2
+{
+    background-color: rgb(154,143,1);
+}
+.hb3
+{
+    background-color: rgb(0,0,255);
+}
+div p
+{
+    height: 75%;
+    box-sizing: border-box;
+    padding: 10px;
+    background-color: rgb(254,246,255);
+}
+/************** Section2 **************/
+
+/************** Section3 **************/
+.sec3
+{
+    display: flex;
+    width: 100%;
+    min-height: 200px;
+    background-color: #0005;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    
+}
+map
+{
+    /* width: 200px; */
+    height:200px;
+    padding: 0;
+    margin: 0;
+    flex-grow: 1;
+}
+.sec3 p
+{
+    width: max(1000px,60%);
+    color: white;
+    min-height: 200px;
+    background-color: rgb(85,85,85);
+    padding: 15px;
+    box-sizing: border-box;
+    font-size: 14px;
+}
+/************** Section3 **************/
+
+/************** Footer **************/
+footer
+{
+    width: 100%;
+    height: 50px;
+    background-color: grey;
+}
+footer marquee
+{
+    line-height: 50px;
+    color: white;
+}
+/************** Footer **************/
